@@ -40,3 +40,131 @@ a {
     color-scheme: dark;
   }
 }
+
+
+/*-------------------------------------------------*/
+
+
+/* File: src/styles/movies.css */
+
+/* Griglia dei film */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonne */
+  gap: 60px; /* Spaziatura tra i film */
+  padding: 60px;
+  list-style: none;
+
+}
+
+/* Stile base per ogni film */
+.movie-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Stile immagine */
+.movie-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Titolo e descrizione */
+.movie-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.movie-item p {
+  margin: 5px 0 15px;
+  color: #666;
+}
+
+/* Effetto al passaggio del mouse */
+.movie-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.genres-button{
+  width: 220px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(231, 231, 236, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #333;
+  box-shadow: 6px 6px 5px 0 rgba(0, 0, 0, 0.04);
+}
+
+.genres-button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.genres-box{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px;
+  gap: 20px;
+}
+
+.movie_card img{
+  height: 460px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.movie-box{
+  display: flex;
+
+  padding:  50px;
+
+}
+.movie-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.movie-text {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  margin: 20px;
+  color: #333;
+  gap: 30px;
+}
+
+.movie-text h1{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+
+}
+.movie-text p{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.cart{
+  height: 460px;
+  width: 500px;
+  border: 1px solid #1111df;
+}
+
